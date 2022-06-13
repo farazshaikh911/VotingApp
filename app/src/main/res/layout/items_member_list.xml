@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cl_member"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<TextView
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/tv_memberCount"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_memberName"
+    android:text="Sadiq"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:padding="8dp"
+    android:layout_marginStart="16dp"
+    />
+    <TextView
+        app:layout_constraintStart_toEndOf="@+id/tv_memberName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_memberCount"
+        android:layout_marginEnd="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:padding="8dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
